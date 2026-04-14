@@ -2,10 +2,74 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <title>Moja web stranica</title>
+    <title>Povijest Solina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             text-align: center;
+             background-color: #f7f7f7;
+             margin: 0;
+             padding: 0;
+        }
+
+         h1 {
+            margin-top: 30px;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-image{
+            width: 100%;
+            height: 280px;
+            background-color: #ddd;/*privremena pozadina*/
+            border: 2px solid#555;
+            margin: 20px 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .button{
+            display: block;
+            width: 80%; 
+            margin: 15px auto;
+            background-color: #e6e6e6;
+            border: 2px solid#555;
+            border-radius: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            transition: 0.2s;
+            position: relative;
+            z-index: 9999;
+            pointer-events: auto;
+        }
+
+        .button:hover{
+            background-color: #d2d2d2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dobrodošli na moju web stranicu</h1>
-    <p>Ovo je moj školski projekt.</p>
+
+    <h1>POVIJEST<br>SOLINA</h1>
+
+    <div class="container">
+
+        <div class="main-image" style="background-image: url('./images/solin_main.jpg');"></div>
+
+        <a href="./povijest.html" class="button">Povijest Solina</a>
+        <a href="./povijesne-gradjevine.html" class="button">Važne građevine i znamenitosti</a>
+        <a href="./solin_danas.html" class="button">Solin danas</a>
+        <a href="./slike.html" class="button">Slike</a>
+
+    </div>
+
 </body>
 </html>
