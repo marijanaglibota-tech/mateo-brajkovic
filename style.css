@@ -1,20 +1,13 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
+/* ===== SAMO STRANICA POVIJEST ===== */
 
-/* NASLOV BEZ OKVIRA */
-.title {
+.povijest-page .title {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 40px;
 }
 
-/* JEDINI OKVIR – TEKST + GUMB */
-.text-box {
+.povijest-page .text-box {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 40px;
@@ -24,15 +17,13 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* TEKST */
-.text-box p {
+.povijest-page .text-box p {
     text-align: left;
     line-height: 1.7;
     font-size: 18px;
 }
 
-/* GUMB UNUTAR OKVIRA */
-.back-button {
+.povijest-page .back-button {
     display: block;
     width: fit-content;
     margin: 30px auto 0 auto;
@@ -44,9 +35,8 @@ body {
     text-decoration: none;
     color: black;
     background-color: #e6e6e6;
-    font-size: 16px;
 }
 
-.back-button:hover {
+.povijest-page .back-button:hover {
     background-color: #d0d0d0;
 }
