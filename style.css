@@ -1,42 +1,111 @@
-/* ===== SAMO STRANICA POVIJEST ===== */
+/* ===============================
+   OSNOVNO (ZA SVE STRANICE)
+================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-.povijest-page .title {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* ===============================
+   NASLOV (SVE STRANICE)
+================================ */
+.title {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 42px;
+    letter-spacing: 2px;
 }
 
-.povijest-page .text-box {
+/* ===============================
+   NASLOVNA STRANICA
+================================ */
+.home-page {
+    text-align: center;
+}
+
+.home-page nav {
+    margin-top: 30px;
+}
+
+.home-page nav a {
+    display: block;
+    width: 280px;
+    margin: 12px auto;
+
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 18px;
+
+    background-color: #e6e6e6;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.home-page nav a:hover {
+    background-color: #d0d0d0;
+}
+
+/* ===============================
+   STRANICE SA SADRŽAJEM
+   (Povijest, Građevine, Danas)
+================================ */
+.povijest-page .content-box,
+.gradjevine-page .content-box,
+.danas-page .content-box {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 30px 40px;
+    margin: 0 auto 50px auto;
+    padding: 35px 40px;
 
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.povijest-page .text-box p {
+/* TEKST */
+.povijest-page .content-box p,
+.gradjevine-page .content-box p,
+.danas-page .content-box p {
     text-align: left;
     line-height: 1.7;
     font-size: 18px;
 }
 
-.povijest-page .back-button {
+/* ===============================
+   GUMB "NATRAG NA POČETNU"
+================================ */
+.back-button {
     display: block;
     width: fit-content;
     margin: 30px auto 0 auto;
 
     padding: 10px 25px;
+    font-size: 16px;
+
+    background-color: #e6e6e6;
+    color: black;
+    text-decoration: none;
+
     border: 2px solid black;
     border-radius: 20px;
-
-    text-decoration: none;
-    color: black;
-    background-color: #e6e6e6;
 }
 
-.povijest-page .back-button:hover {
+.back-button:hover {
     background-color: #d0d0d0;
+}
+
+/* ===============================
+   SAKRIJ AKTIVNI GUMB NA
+   STRANICI POVIJEST (ONAJ GORE)
+================================ */
+.povijest-page .button.active {
+    display: none;
 }
