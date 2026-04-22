@@ -1,0 +1,68 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIJELO STRANICE */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #000;
+}
+
+/* NASLOV */
+.title {
+    margin-top: 30px;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+/* GLAVNA SLIKA */
+.main-image {
+    width: 80%;
+    max-width: 900px;
+    height: 350px;
+    margin: 30px auto;
+
+    background-image: url("solin_main.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* KONTEJNER ZA GUMBE */
+.container.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* GUMB */
+.button {
+    width: 300px;
+    padding: 12px 0;
+
+    background-color: #e6e6e6;
+    border: 2px solid #000;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* HOVER EFEKT */
+.button:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.03);
+}
+
+/* AKTIVNI GUMB (trenutna stranica) */
+.button.active {
