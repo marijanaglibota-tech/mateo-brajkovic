@@ -31,3 +31,50 @@
 .home-page nav a:hover {
     background-color: #d0d0d0;
 }
+/* OKVIR */
+.okvir {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    text-align: center;   /* ✅ sve u sredinu */
+}
+
+/* NASLOV U OKVIRU */
+.naslov-okvir {
+    font-size: 36px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* TEKST U OKVIRU */
+.tekst-okvir {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto;       /* ✅ tekst kao blok po sredini */
+    text-align: center;  /* ✅ tekst centriran */
+}
+
+/* GUMB */
+.back-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 30px;
+
+    border: 2px solid black;
+    border-radius: 30px;
+
+    background-color: #e6e6e6;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #d0d0d0;
+}
